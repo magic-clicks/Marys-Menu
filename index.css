@@ -14,15 +14,44 @@ Monorail Silver: #B5BBBC
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 20px;
+}
+.introduction {
+    padding: 25px;
+    gap: 25px;
+    background-color: #F9CF72;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.introductionText {
+    flex: 1 1 1;
+    text-wrap: wrap;
+    max-width: 50%; /* Trying this out to keep cards next to eachother on desktop*/
+    text-align: center;
+}
+.introductionText h1{
+    font-size: 30px;
+}
+.introductionImage {
+    flex: 1 1 1;
+}
+.introductionImage img{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 25px;
 }
 .hero {
     background-color: #88A3B3;
     height: 100%;
     text-align: center;
-    padding: 50px
+    padding: 25px;
 }
 .cards {
-    padding: 50px;
+    padding: 25px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -76,9 +105,7 @@ Monorail Silver: #B5BBBC
     gap: 25px;
 }
 .recipeText {
-    border: solid black 2px;
-    height: 200px;
-    width: 200px;
+    text-align: center;
 }
 .recipeImage {
     border: solid black 2px;

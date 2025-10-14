@@ -3,17 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    
 }
 .header {
     display: flex;
     justify-content: space-evenly;
-    padding: 50px;
+    padding: 25px;
     font-size: 25px;
     color: black;
     font-weight: bold;
     font-family: sans-serif;
     flex-wrap: wrap;
     gap: 25px;
+    background-color: #E5E0D7;
 }
 .header-selections {
     display: flex;
