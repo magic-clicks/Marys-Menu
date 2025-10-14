@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.header-selections {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    flex-wrap: wrap;
+    flex: 1 1 1;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,108 @@
+/* 
+Colors:
+
+My Favorite Jeans: #88A3B3
+Heron Plum: #E5E0D7
+Golden Plumeria: #F9CF72
+Jaipur Pink: #E2919F
+Monorail Silver: #B5BBBC
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero {
+    background-color: #88A3B3;
+    height: 100%;
+    text-align: center;
+    padding: 50px
+}
+.cards {
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #88A3B3;
+    gap: 50px;
+}
+.cardOne {
+    border: solid black 2px;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    flex: 1 1 1;
+    background-color: #F9CF72;
+}
+
+.cardTwo {
+    border: solid black 2px;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    flex: 1 1 1;
+    background-color: #E2919F;
+}
+
+.cardThree {
+    border: solid black 2px;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    flex: 1 1 1;
+    background-color: #B5BBBC;
+}
+
+.cardFour {
+    border: solid black 2px;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    flex: 1 1 1;
+    background-color: #E5E0D7;
+}
+.recipeOfTheWeek {
+    padding: 50px;
+    background-color: #F9CF72;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+.recipeText {
+    border: solid black 2px;
+    height: 200px;
+    width: 200px;
+}
+.recipeImage {
+    border: solid black 2px;
+     height: 200px;
+    width: 200px;
+}
+.recentlyAdded {
+    padding: 50px;
+    background-color: #E2919F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.recentlyText {
+    border: solid black 2px;
+    height: 200px;
+    width: 200px;
+}
+.recentlyImage {
+    border: solid black 2px;
+    height: 200px;
+    width: 200px;
+}
+
+
