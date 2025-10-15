@@ -28,6 +28,8 @@ svg {
 }
 .introduction {
     padding: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
     gap: 25px;
     background-color: #88A3B3;
     display: flex;
@@ -41,7 +43,6 @@ svg {
 }
 .introductionImage {
     flex: 1 1 1;
-    
 }
 .introductionImage img{
     height: auto;
@@ -156,7 +157,7 @@ svg {
 }
 .recentlyAdded {
     padding: 50px;
-    background: linear-gradient(#B5BBBC, #88A3B3 75%);
+    background-color: #B5BBBC;
     justify-content: space-evenly;
     gap: 25px;
 }
