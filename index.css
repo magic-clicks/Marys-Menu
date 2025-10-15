@@ -49,7 +49,7 @@ svg {
     width: 600px;
     max-width: 100%;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px #B5BBBC; /* not sure if I love it*/
+    box-shadow: 5px 5px 5px black; /* not sure if I love it*/
 }
 .hero {
     background: linear-gradient(#88A3B3 75%, #B5BBBC);
@@ -125,19 +125,12 @@ svg {
 .cardThree img:hover {
     transform: translateY(-5px);
 }
-/* .cardFour {
-    border: solid black 2px;
-    border-radius: 25px;
-    width: 200px;
-    height: 200px;
-    flex: 1 1 1;
-    background-color: #E5E0D7; 
-} Not currently being used */
 .recipeOfTheWeek {
     padding: 50px;
     background-color: #B5BBBC;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     gap: 25px;
