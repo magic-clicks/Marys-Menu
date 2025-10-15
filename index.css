@@ -26,10 +26,6 @@ a {
 svg {
   vertical-align: text-bottom;
 }
-img:hover {
-    transform: translateY(-5px); /* fun little animation that moves photo a bit*/
-    
-}
 .introduction {
     padding: 25px;
     gap: 25px;
@@ -55,9 +51,8 @@ img:hover {
     border-radius: 25px;
 }
 .hero {
-    background-color: #88A3B3;
+    background: linear-gradient(#88A3B3, #F9CF72);
     text-align: center;
-    padding: 25px;
 }
 .hero h1 {
     padding: 25px;
@@ -86,6 +81,10 @@ img:hover {
     max-height: 100%;
     border-radius: 25px;
     object-fit: cover;
+    
+}
+.cardOne img:hover {
+    transform: translateY(-5px);
 }
 .cardTwo {
     width: 300px;
@@ -103,6 +102,9 @@ img:hover {
     border-radius: 25px;
     object-fit: cover;
 }
+.cardTwo img:hover {
+    transform: translateY(-5px);
+}
 .cardThree {
     width: 300px;
     height: 300px;
@@ -118,6 +120,9 @@ img:hover {
     max-height: 100%;
     border-radius: 25px;
     object-fit: cover;
+}
+.cardThree img:hover {
+    transform: translateY(-5px);
 }
 /* .cardFour {
     border: solid black 2px;
@@ -151,7 +156,7 @@ img:hover {
 }
 .recentlyAdded {
     padding: 50px;
-    background-color: #88A3B3;
+    background: linear-gradient(#F9CF72, #B5BBBC);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
