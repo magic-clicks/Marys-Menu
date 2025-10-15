@@ -8,9 +8,14 @@
 svg {
   vertical-align: text-bottom;
 }
+.header a {
+    text-decoration: none;
+    color: black;
+}
 .header {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content:space-around;
     padding: 25px;
     font-size: 25px;
     color: black;
@@ -20,14 +25,12 @@ svg {
     gap: 25px;
     background-color: #E5E0D7;
 }
-.header-selections {
+.header-home{
     display: flex;
-    justify-content: space-evenly;
+}
+.header-selections {
+    flex: 1 1 1;
+    display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    flex: 1 1 1;
-}
-.header a {
-    text-decoration: none;
-    color: black;
 }

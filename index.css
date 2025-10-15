@@ -36,22 +36,22 @@ svg {
     align-items: center;
 }
 .introductionText {
-    flex: 1 1 1;
-    text-wrap: wrap;
-    max-width: 50%; /* Trying this out to keep cards next to eachother on desktop*/
+    flex: 1 1 0;
     text-align: center;
 }
 .introductionImage {
     flex: 1 1 1;
+    
 }
 .introductionImage img{
     height: auto;
     width: 600px;
     max-width: 100%;
     border-radius: 25px;
+    box-shadow: 5px 5px 5px #B5BBBC; /* not sure if I love it*/
 }
 .hero {
-    background: linear-gradient(#88A3B3, #F9CF72);
+    background: linear-gradient(#88A3B3 75%, #B5BBBC);
     text-align: center;
 }
 .hero h1 {
@@ -134,7 +134,7 @@ svg {
 } Not currently being used */
 .recipeOfTheWeek {
     padding: 50px;
-    background-color: #F9CF72;
+    background-color: #B5BBBC;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -156,10 +156,18 @@ svg {
 }
 .recentlyAdded {
     padding: 50px;
-    background: linear-gradient(#F9CF72, #B5BBBC);
+    background: linear-gradient(#B5BBBC, #88A3B3 75%);
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.recentlyAdded h1{
+    text-align: center;
+}
+.recentCards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 25px;
     gap: 25px;
 }
 .recentlyText {
