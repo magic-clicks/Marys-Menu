@@ -5,6 +5,9 @@
     font-family: sans-serif;
     font-size: 20px;
 }
+svg {
+  vertical-align: text-bottom;
+}
 .header {
     display: flex;
     justify-content: space-evenly;
