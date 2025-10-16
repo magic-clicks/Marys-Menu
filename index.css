@@ -47,6 +47,7 @@ svg {
 .introductionImage img{
     height: auto;
     width: 600px;
+    display: block;
     max-width: 100%;
     border-radius: 25px;
     box-shadow: 5px 5px 5px black; /* not sure if I love it*/
@@ -67,89 +68,54 @@ svg {
     gap: 50px;
     text-align: center;
 }
-.cardOne {
-    width: 300px;
-    height: 300px;
+.cardOne, .cardTwo, .cardThree {
     flex: 1 1 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.cardOne img {
-    height: 300px;
-    width: 300px;
+.cards img {
+    height: 400px;
+    width: auto;
+    border-radius: 25px;
+    display: block;
+    padding: 10px;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 25px;
-    object-fit: cover;
-    
 }
-.cardOne img:hover {
-    transform: translateY(-5px);
-}
-.cardTwo {
-    width: 300px;
-    height: 300px;
-    flex: 1 1 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cardTwo img{
-    height: 300px;
-    width: 300px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 25px;
-    object-fit: cover;
-}
-.cardTwo img:hover {
-    transform: translateY(-5px);
-}
-.cardThree {
-    width: 300px;
-    height: 300px;
-    flex: 1 1 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cardThree img{
-    height: 300px;
-    width: 300px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 25px;
-    object-fit: cover;
-}
-.cardThree img:hover {
+.cards img:hover {
     transform: translateY(-5px);
 }
 .recipeOfTheWeek {
-    padding: 50px;
+    padding: 25px;
     background-color: #B5BBBC;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 25px;
 }
+.recipeOfTheWeek img {
+    height: auto;
+    width: 750px;
+    border-radius: 25px;
+    display: block;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
 .recipeText {
+    flex: 1 1 1;
     text-align: center;
 }
 .recipeImage {
+    flex: 1 1 1;
+    display: flex;
     align-items: center;
-}
-.recipeImage img{
-    height: auto;
-    width: 300px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 25px;
+    justify-content: center;
 }
 .recentlyAdded {
-    padding: 50px;
     background-color: #B5BBBC;
     justify-content: space-evenly;
     gap: 25px;
@@ -164,15 +130,22 @@ svg {
     padding: 25px;
     gap: 25px;
 }
-.recentlyText {
-    border: solid black 2px;
-    height: 200px;
-    width: 200px;
+.recentCards img {
+    height: 400px;
+    width: auto;
+    border-radius: 25px;
+    display: block;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
 }
-.recentlyImage {
+.recentImages {
+    flex: 1 1 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border: solid black 2px;
-    height: 200px;
-    width: 200px;
+    
 }
 
 
