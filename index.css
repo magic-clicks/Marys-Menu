@@ -136,15 +136,14 @@ svg {
     border-radius: 25px;
     display: block;
     padding: 10px;
-    object-fit: cover;
-    object-position: center;
+    object-fit: cover; /* Use this to make sure images are fit into the container*/
+    object-position: center; /* Once the images are fit this squares it up*/
 }
 .recentImages {
     flex: 1 1 1;
     display: flex;
     flex-wrap: wrap;
     border: solid black 2px;
-    
 }
 
 
