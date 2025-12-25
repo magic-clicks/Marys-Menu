@@ -35,3 +35,9 @@ svg {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #E5E0D7;
+    font-weight: bold;
+}
