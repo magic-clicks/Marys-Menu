@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mary's Menu</title>
-    <link rel="stylesheet" href="/Style Sheets/HeaderFooter.css">
+    <link rel="stylesheet" href="/Style Sheets/header-footer.css">
+    <link rel="stylesheet" href="/Style Sheets/dark-mode.css">
     <style>
         /* 
         Colors:
@@ -23,6 +24,9 @@
             box-sizing: border-box;
             font-family: sans-serif;
             font-size: 20px;
+        }
+        body {
+            background-color: #88A3B3;
         }
         img {
             max-width: 100%;
@@ -43,7 +47,7 @@
             padding-left: 10%;
             padding-right: 10%;
             gap: 25px;
-            background-color: #88A3B3;
+            /* background-color: #88A3B3; */
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -65,7 +69,7 @@
             box-shadow: 5px 5px 5px black; /* not sure if I love it*/
         }
         .hero {
-            background: linear-gradient(#88A3B3 75%, #B5BBBC);
+           /* background: linear-gradient(#88A3B3 75%, #B5BBBC); */
             text-align: center;
         }
         .hero h1 {
@@ -98,7 +102,7 @@
         }
         .recipeOfTheWeek {
             padding: 25px;
-            background-color: #B5BBBC;
+           /* background-color: #B5BBBC; */
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -124,7 +128,7 @@
             justify-content: center;
         }
         .recentlyAdded {
-            background-color: #B5BBBC;
+           /* background-color: #B5BBBC; */
             justify-content: space-evenly;
             gap: 25px;
         }
@@ -181,6 +185,7 @@
             <a href="./Pages/dinner.html">Dinner</a> 
             <a href="./Pages/desserts.html">Desserts</a>
             <a href="./Pages/contact.html">Contact</a>
+            <button id="dark-mode">Dark Mode</button>
         </nav>
     </header>
     <div class="introduction">
@@ -194,64 +199,16 @@
         </div>
     </div>
     <div class="hero">
-        <h1>Check out my breakfast, dinner, and dessert menus:</h1>
+        <h1>Check out my breakfasts, dinners, and desserts!</h1>
         <div class="cards">
             <div class="cardOne">
-                <a href="./Pages/breakfast.html"><img src="./Photos/Index Photos/Breakfast.png" alt="Breakfast">Breakfast
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                >
-                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                <path d="M11 13l9 -9" />
-                <path d="M15 4h5v5" />
-                </svg>
-                </a>
+                <a href="./Pages/breakfast.html"><img src="./Photos/Index Photos/Breakfast.png" alt="Breakfast">Breakfast</a>
             </div>
             <div class="cardTwo">
-                <a href="./Pages/dinner.html"><img src="./Photos/Index Photos/Dinner.png" alt="Dinner">Dinner
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                >
-                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                <path d="M11 13l9 -9" />
-                <path d="M15 4h5v5" />
-                </svg>
-                </a>
+                <a href="./Pages/dinner.html"><img src="./Photos/Index Photos/Dinner.png" alt="Dinner">Dinner</a>
             </div>
             <div class="cardThree">
-                <a href="./Pages/desserts.html"><img src="./Photos/Index Photos/Dessert.png" alt="Dessert">Desserts
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                >
-                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                <path d="M11 13l9 -9" />
-                <path d="M15 4h5v5" />
-                </svg>
-                </a>
+                <a href="./Pages/desserts.html"><img src="./Photos/Index Photos/Dessert.png" alt="Dessert">Desserts</a>
             </div>
         </div>
     </div>
@@ -278,8 +235,6 @@
     <footer>
     <p>Mary’s Menu</p>
     </footer>
-<script>
-
-</script>
+<script src="/Scripts/darkMode.js"></script>
 </body>
 </html>
