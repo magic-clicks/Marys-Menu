@@ -48,4 +48,11 @@ button {
     font-weight: bold;
     border-radius: 5px;
     padding: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsla(39, 21%, 87%, 0.7);
+}
+button:active {
+    background-color: hsla(39, 21%, 87%, 0.5);
 }
