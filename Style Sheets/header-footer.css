@@ -22,16 +22,16 @@ svg {
 .header {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-between;
     padding: 25px;
     color: black;
     font-weight: bold;
     font-family: sans-serif;
     flex-wrap: wrap;
     gap: 25px;
-    background-color: #E2919F;
+    background-color: #c1b6ab;
     align-items: center;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 .header-home{
     display: flex;
@@ -49,11 +49,12 @@ svg {
 footer {
     text-align: center;
     padding: 5px;
-    background-color:  #E2919F;
+    background-color:  #c1b6ab;
     font-weight: bold;
+    border-top: solid black 1px;
 }
 button {
-    background-color:  #E2919F;
+    background-color:  #c1b6ab;
     font-weight: bold;
     border: none;
     padding: 5px;
@@ -64,3 +65,41 @@ button:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease;
 }
+.toggle-button {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+}
+.toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
+
+}
+
+@media (max-width: 850px) { 
+        .toggle-button {
+            display: flex;
+
+        }
+
+        .header-selections {
+            display: none;
+            width: 100%;
+        }
+
+        .header-selections {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-selections.active {
+            display: flex;
+        }
+    }
