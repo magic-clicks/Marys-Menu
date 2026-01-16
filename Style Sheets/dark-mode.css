@@ -1,8 +1,13 @@
-.dark-mode{
+body.dark-mode main {
+    
     background-color: hsl(0, 0%, 25%);
     color: white;
-    transition: background-color .3s, color .3s; /* Smooths transition*/
+    transition: background-color .3s, color .3s; 
+    
 }
-.dark-mode a{
-    color: white;
+body.dark-mode a {
+    color: black;
+}
+.dark-mode footer {
+    color: black;
 }
