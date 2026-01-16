@@ -26,7 +26,7 @@ body {
 }
 main {
     flex: 1;
-    background-color: #88A3B3;
+    
 }
 .intro-container {
     display: flex;
@@ -36,6 +36,7 @@ main {
     text-align: center;
     overflow: hidden;
     font-size: 1.2rem;
+    background-color: #88A3B3;
 }
 .intro-text, .intro-img {
     width: 100%;

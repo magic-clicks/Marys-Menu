@@ -31,6 +31,7 @@ svg {
     gap: 25px;
     background-color: #E2919F;
     align-items: center;
+    border-bottom: 2px solid black;
 }
 .header-home{
     display: flex;
@@ -43,6 +44,7 @@ svg {
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.5rem;
+    
 }
 footer {
     text-align: center;
