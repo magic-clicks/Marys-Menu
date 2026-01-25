@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="/Style Sheets/header-footer.css">
     <link rel="stylesheet" href="/Style Sheets/dark-mode.css">
     <style>
-
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            max-width: 100%;
+            margin: 25px;
+        }
     </style>
 </head>
 <body>
@@ -48,10 +66,9 @@
     </header>
 
     <main>
-        <div>
-        <h1>Have a good recipe to share?</h1> <!-- Make google form to submit -->
-        <p>test</p>
-    </div>
+        <div class="form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdrgChQ6J1_gO7PIeXlvPbnhtjPqu-mgP2ai4hKz0mexxV-ug/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
 
 
     </main>
@@ -60,7 +77,9 @@
     <footer>
     <p>Mary's Menu</p>
     </footer>
-<script src="/Scripts/darkMode.js"></script>
-<script src="/Scripts/navbar.js"></script>
+
+
+    <script src="/Scripts/darkMode.js"></script>
+    <script src="/Scripts/navbar.js"></script>
 </body>
 </html>
