@@ -54,3 +54,27 @@ main {
     border-radius: 25px;
     box-shadow: 5px 5px 5px black;
 }
+.sections-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.sections {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+.sections img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+@media (max-width: 850px) {
+    .intro-container {
+        text-align: center;
+    }
+    .sections {
+        grid-template-columns: 1fr; 
+    }
+}
