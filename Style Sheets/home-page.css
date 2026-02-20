@@ -97,11 +97,42 @@ main {
     text-wrap: wrap;
     font-size: 1.5rem;
 }
+.selections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.selections {
+    max-width: 1000px;
+    display: flex; /* Come back to this, might be better off using grid idk*/
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.selections img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px black;
+}
+#selection-one a, #selection-two a, #selection-three a {
+    text-align: center;
+    text-decoration: none;
+    color: black; /* Come back to this because it's not working with dark mode
+                        Also add hover classes to make image bounce up a bit */
+}
 @media (max-width: 850px) {
     .intro-container h1{
         text-align: center;
     }
     .sections {
+        grid-template-columns: 1fr; 
+    }
+    .selections {
         grid-template-columns: 1fr; 
     }
 }
