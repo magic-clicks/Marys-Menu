@@ -28,6 +28,15 @@ main {
     flex: 1;
     background-color: #88A3B3;
 }
+.testing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.testing {
+    font-size: 1rem;
+    text-align: center;
+}
 .intro-container {
     display: flex;
     flex-wrap: wrap;
@@ -35,20 +44,19 @@ main {
     align-items: center;
     text-align: left;
     overflow: hidden;
-    font-size: 1.2rem;
-
+    font-size: 1.5rem;
+    margin: 1rem;
+    
 }
 .intro-text, .intro-img {
-    width: 100%;
     max-width: 500px;
-    margin: 20px;
 }
 .intro-text h1 {
     margin-bottom: 1rem;
 }
 .intro-img img{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
     border-radius: 25px;
@@ -57,21 +65,40 @@ main {
 .sections-container {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 1rem;
 }
 .sections {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 25px;
+    gap: 1rem;
 }
 .sections img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: center;
     border-radius: 25px;
+    box-shadow: 5px 5px 5px black;
+}
+#section-one, #section-two, #section-three, #section-four {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.story-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.story-text {
+    max-width: 1000px;
+    text-align: left;
+    text-wrap: wrap;
+    font-size: 1.5rem;
 }
 @media (max-width: 850px) {
-    .intro-container {
+    .intro-container h1{
         text-align: center;
     }
     .sections {
