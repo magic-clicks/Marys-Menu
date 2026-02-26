@@ -48,7 +48,8 @@ main {
     margin: 1rem;
     
 }
-.intro-text, .intro-img {
+.intro-text, 
+.intro-img {
     max-width: 500px;
 }
 .intro-text h1 {
@@ -73,6 +74,10 @@ main {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
 }
+.sections a {
+    text-decoration: none;
+    color: black;
+}
 .sections img {
     width: 100%;
     aspect-ratio: auto;
@@ -81,7 +86,10 @@ main {
     border-radius: 25px;
     box-shadow: 5px 5px 5px black;
 }
-#section-one, #section-two, #section-three, #section-four {
+#section-one, 
+#section-two, 
+#section-three, 
+#section-four {
     text-align: center;
     font-size: 1.2rem;
 }
@@ -119,17 +127,23 @@ main {
     border-radius: 25px;
     box-shadow: 5px 5px 5px black;
 }
-.selections img:hover {
+.selections img:hover,
+.sections img:hover {
     transform: translate(0, -1rem);
     cursor: pointer;
 }
-#selection-one a, #selection-two a, #selection-three a {
+#selection-one a, 
+#selection-two a, 
+#selection-three a {
     text-align: center;
     text-decoration: none;
-    color: black; /* Come back to this because it's not working with dark mode
-                     */
+    color: black; 
 }
 @media (max-width: 850px) {
+    * {
+        text-align: center; /* This might end not not being a good idea, keep in mind this is on if you run
+        into mobile issues down the line*/
+    }
     .intro-container h1{
         text-align: center;
     }
